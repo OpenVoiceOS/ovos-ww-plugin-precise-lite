@@ -2,10 +2,10 @@
 from setuptools import setup
 
 
-PLUGIN_ENTRY_POINT = 'ovos-ww-plugin-precise-lite=ovos_ww_plugin_precise_lite:PreciseLiteHotwordPlugin'
+PLUGIN_ENTRY_POINT = 'ovos-precise-lite=ovos_ww_plugin_precise_lite:PreciseLiteHotwordPlugin'
 setup(
     name='ovos-ww-plugin-precise-lite',
-    version='0.1.0a1',
+    version='0.1.0a2',
     description='A wake word plugin for OpenVoiceOS',
     url='https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite',
     author='JarbasAi',

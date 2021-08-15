@@ -10,25 +10,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+from os.path import join, isfile, expanduser, dirname
+
+import precise_lite
 from ovos_plugin_manager.templates.hotwords import HotWordEngine
 from ovos_utils.log import LOG
-from os.path import join, isfile, expanduser, dirname
 from petact import install_package
+from precise_lite.runner import PreciseLiteListener
 from xdg import BaseDirectory as XDG
-from precise_lite_runner import PreciseRunner, PreciseEngine, ReadWriteStream
-import precise_lite
 
 
 class PreciseLiteHotwordPlugin(HotWordEngine):
     """Precise is the default wake word engine for Mycroft.
     This is the community developed TfLite version of that engine
     """
+
     def __init__(self, key_phrase="hey mycroft", config=None, lang="en-us"):
         super().__init__(key_phrase, config, lang)
         self.expected_duration = self.config.get("expected_duration") or 3
         self.has_found = False
-        self.stream = ReadWriteStream()
-
+        self.chunk_size = 2048
         self.trigger_level = self.config.get('trigger_level', 3)
         self.sensitivity = self.config.get('sensitivity', 0.5)
 
@@ -41,13 +42,12 @@ class PreciseLiteHotwordPlugin(HotWordEngine):
 
         self.precise_model = expanduser(model)
 
-        precise_exe = join(dirname(precise_lite.__file__),
-                           "scripts", "engine.py")
-        self.runner = PreciseRunner(
-            PreciseEngine(precise_exe, self.precise_model),
-            self.trigger_level, self.sensitivity,
-            stream=self.stream, on_activation=self.on_activation,
-        )
+        self.runner = PreciseLiteListener(model=self.precise_model,
+                                          chunk_size=self.chunk_size,
+                                          trigger_level=self.trigger_level,
+                                          sensitivity=self.sensitivity,
+                                          on_activation=self.on_activation,
+                                          )
         self.runner.start()
 
     @staticmethod
@@ -65,9 +65,6 @@ class PreciseLiteHotwordPlugin(HotWordEngine):
 
     def on_activation(self):
         self.has_found = True
-
-    def update(self, chunk):
-        self.stream.write(chunk)
 
     def found_wake_word(self, frame_data):
         if self.has_found:
