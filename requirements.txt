@@ -1,0 +1,5 @@
+precise_lite>=0.4.0a1
+precise_lite_runner>=0.3.1
+petact>=0.1.2
+pyxdg>=0.26
+ovos-plugin-manager>=0.0.1a7
