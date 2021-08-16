@@ -16,7 +16,7 @@ import precise_lite
 from ovos_plugin_manager.templates.hotwords import HotWordEngine
 from ovos_utils.log import LOG
 from petact import install_package
-from precise_lite.runner import PreciseLiteListener
+from precise_lite.runner import PreciseLiteListener, ReadWriteStream
 from xdg import BaseDirectory as XDG
 
 
@@ -29,6 +29,7 @@ class PreciseLiteHotwordPlugin(HotWordEngine):
         super().__init__(key_phrase, config, lang)
         self.expected_duration = self.config.get("expected_duration") or 3
         self.has_found = False
+        self.stream = ReadWriteStream()
         self.chunk_size = 2048
         self.trigger_level = self.config.get('trigger_level', 3)
         self.sensitivity = self.config.get('sensitivity', 0.5)
@@ -43,6 +44,7 @@ class PreciseLiteHotwordPlugin(HotWordEngine):
         self.precise_model = expanduser(model)
 
         self.runner = PreciseLiteListener(model=self.precise_model,
+                                          stream=self.stream,
                                           chunk_size=self.chunk_size,
                                           trigger_level=self.trigger_level,
                                           sensitivity=self.sensitivity,
@@ -65,6 +67,9 @@ class PreciseLiteHotwordPlugin(HotWordEngine):
 
     def on_activation(self):
         self.has_found = True
+
+    def update(self, chunk):
+        self.stream.write(chunk)
 
     def found_wake_word(self, frame_data):
         if self.has_found:
