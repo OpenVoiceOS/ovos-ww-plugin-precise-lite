@@ -1,7 +1,8 @@
 from os.path import join, isfile, expanduser, dirname
 from ovos_plugin_manager.templates.hotwords import HotWordEngine
 from ovos_utils.log import LOG
-from petact import install_package
+import requests
+from os import makedirs
 from precise_lite_runner import PreciseLiteListener, ReadWriteStream
 from xdg import BaseDirectory as XDG
 
@@ -20,7 +21,8 @@ class PreciseLiteHotwordPlugin(HotWordEngine):
         self.trigger_level = self.config.get('trigger_level', 3)
         self.sensitivity = self.config.get('sensitivity', 0.5)
 
-        model = self.config.get('model')
+        default_model = "https://github.com/OpenVoiceOS/precise-lite-models/raw/master/wakewords/en/hey_mycroft.tflite"
+        model = self.config.get('model', default_model)
         if model and model.startswith("http"):
             model = self.download_model(model)
 
@@ -46,7 +48,10 @@ class PreciseLiteHotwordPlugin(HotWordEngine):
         if not isfile(model_path):
             LOG.info("Downloading model for precise-lite:")
             LOG.info(url)
-            install_package(url, folder)
+            content = requests.get(url).content
+            makedirs(folder, exist_ok=True)
+            with open(model_path, "wb") as f:
+                f.write(content)
             LOG.info(f"Model downloaded to {model_path}")
 
         return model_path

@@ -5,7 +5,7 @@ from setuptools import setup
 PLUGIN_ENTRY_POINT = 'ovos-precise-lite=ovos_ww_plugin_precise_lite:PreciseLiteHotwordPlugin'
 setup(
     name='ovos-ww-plugin-precise-lite',
-    version='0.1.0a3',
+    version='0.1.0a4',
     description='A wake word plugin for OpenVoiceOS',
     url='https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite',
     author='JarbasAi',
@@ -14,7 +14,6 @@ setup(
     packages=['ovos_ww_plugin_precise_lite'],
     install_requires=["precise_lite_runner>=0.3.2",
                       "ovos-plugin-manager>=0.0.1a7",
-                      "petact>=0.1.2",
                       "pyxdg>=0.26"],
     zip_safe=True,
     classifiers=[
