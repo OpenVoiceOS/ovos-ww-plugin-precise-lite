@@ -1,20 +1,19 @@
 #!/usr/bin/env python3
 from setuptools import setup
 
-
 PLUGIN_ENTRY_POINT = 'ovos-precise-lite=ovos_ww_plugin_precise_lite:PreciseLiteHotwordPlugin'
 setup(
     name='ovos-ww-plugin-precise-lite',
-    version='0.1.0',
+    version='0.1.1',
     description='A wake word plugin for OpenVoiceOS',
     url='https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['ovos_ww_plugin_precise_lite'],
-    install_requires=["precise_lite_runner>=0.3.2",
-                      "ovos-plugin-manager>~0.0.2",
-                      "pyxdg>=0.26"],
+    install_requires=["precise_lite_runner~=0.4",
+                      "ovos-utils~=0.0.14a7",
+                      "ovos-plugin-manager~=0.0.4a2"],
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',

@@ -4,7 +4,7 @@ from ovos_utils.log import LOG
 import requests
 from os import makedirs
 from precise_lite_runner import PreciseLiteListener, ReadWriteStream
-from xdg import BaseDirectory as XDG
+from ovos_utils.xdg_utils import xdg_data_home
 
 
 class PreciseLiteHotwordPlugin(HotWordEngine):
@@ -43,7 +43,7 @@ class PreciseLiteHotwordPlugin(HotWordEngine):
     @staticmethod
     def download_model(url):
         name = url.split("/")[-1].split(".")[0] + ".tflite"
-        folder = join(XDG.xdg_data_home, "precise-lite")
+        folder = join(xdg_data_home(), "precise-lite")
         model_path = join(folder, name)
         if not isfile(model_path):
             LOG.info("Downloading model for precise-lite:")
