@@ -1,5 +1,5 @@
 ## Description
-Mycroft wake word plugin for [precise-lite](https://alphacephei.com/vosk/)
+Mycroft wake word plugin for [precise-lite](https://github.com/OpenVoiceOS/precise-lite)
 
 ## Install
 
@@ -25,3 +25,5 @@ Add the following to your hotwords section in mycroft.conf
    }
 }
 ```
+
+Get community models [here](https://github.com/OpenVoiceOS/precise-lite-models)
