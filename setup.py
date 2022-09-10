@@ -50,7 +50,11 @@ def required(requirements_file):
                 if pkg.strip() and not pkg.startswith("#")]
 
 
-PLUGIN_ENTRY_POINT = 'ovos-precise-lite=ovos_ww_plugin_precise_lite:PreciseLiteHotwordPlugin'
+PLUGIN_ENTRY_POINT = (
+    'ovos-precise-lite=ovos_ww_plugin_precise_lite:PreciseLiteHotwordPlugin',  # backwards compat
+    'ovos-ww-plugin-precise-lite=ovos_ww_plugin_precise_lite:PreciseLiteHotwordPlugin'
+)
+
 setup(
     name='ovos-ww-plugin-precise-lite',
     version=get_version(),
