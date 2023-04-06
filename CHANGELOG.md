@@ -1,5 +1,21 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.2a2...HEAD)
+
+**Implemented enhancements:**
+
+- feat/bump\_ovos\_precise\_runner [\#4](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/pull/4) ([JarbasAl](https://github.com/JarbasAl))
+
+**Closed issues:**
+
+- Requirements issue [\#2](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/issues/2)
+
+## [V0.1.2a2](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.2a2) (2022-09-10)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.2a1...V0.1.2a2)
+
 ## [V0.1.2a1](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.2a1) (2022-09-10)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.1...V0.1.2a1)
