@@ -3,7 +3,10 @@ Mycroft wake word plugin for [precise-lite](https://github.com/OpenVoiceOS/preci
 
 ## Install
 
-`pip install ovos-ww-plugin-precise-lite`
+This package supports both tflite-runner and the full tensorflow.
+
+To install with tflite, use `pip install ovos-ww-plugin-precise-lite[tflite]`.
+For the full tensorflow use `pip install ovos-ww-plugin-precise-lite[full]`.
 
 ## Configuration
 
