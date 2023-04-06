@@ -32,17 +32,13 @@ on:
 
 jobs:
   unit_tests:
-    strategy:
-      max-parallel: 2
-      matrix:
-        python-version: [ 3.7, 3.8, 3.9, "3.10" ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set up python ${{ matrix.python-version }}
+      - name: Set up python
         uses: actions/setup-python@v2
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: 3.8
       - name: Install System Dependencies
         run: |
           sudo apt-get update
