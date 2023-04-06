@@ -46,11 +46,11 @@ jobs:
       - name: Install System Dependencies
         run: |
           sudo apt-get update
-          sudo apt install python3-dev
+          sudo apt install python3-dev swig portaudio19-dev
           python -m pip install build wheel
       - name: Install core repo
         run: |
-          pip install .
+          pip install .[full]
       - name: Install test dependencies
         run: |
           pip install pytest pytest-timeout pytest-cov

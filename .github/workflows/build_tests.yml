@@ -45,4 +45,7 @@ jobs:
           python setup.py bdist_wheel
       - name: Install package
         run: |
-          pip install .
+          pip install .[full]
+      - name: Install lite package
+        run: |
+          pip install .[tflite]
