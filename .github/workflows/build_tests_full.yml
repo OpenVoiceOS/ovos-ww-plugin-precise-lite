@@ -1,4 +1,4 @@
-name: Run tflite Build Tests
+name: Run tensorflow Build Tests
 on:
   push:
     branches:
@@ -20,7 +20,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  lite_build_tests:
+  full_build_tests:
     strategy:
       max-parallel: 2
       matrix:
@@ -47,6 +47,6 @@ jobs:
       - name: Build Distribution Packages
         run: |
           python setup.py bdist_wheel
-      - name: Install lite package
+      - name: Install package
         run: |
-          pip install .[tflite]
+          pip install .[full]

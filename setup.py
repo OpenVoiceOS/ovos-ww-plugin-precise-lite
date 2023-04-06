@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from setuptools import setup
 import os
+
 from setuptools import setup
 
 BASEDIR = os.path.abspath(os.path.dirname(__file__))
@@ -65,6 +65,10 @@ setup(
     license='Apache-2.0',
     packages=['ovos_ww_plugin_precise_lite'],
     install_requires=required("requirements/requirements.txt"),
+    extras_require={
+        'tflite': ["tflite-runtime"],
+        'full': ["tensorflow"]
+    },
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
