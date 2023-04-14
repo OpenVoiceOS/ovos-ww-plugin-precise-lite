@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/HEAD)
+## [V0.1.2a3](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.2a3) (2023-04-06)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.2a2...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.2a2...V0.1.2a3)
 
 **Implemented enhancements:**
 
