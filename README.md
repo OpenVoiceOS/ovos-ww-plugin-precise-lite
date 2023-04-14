@@ -1,5 +1,8 @@
 ## Description
-Mycroft wake word plugin for [precise-lite](https://github.com/OpenVoiceOS/precise-lite)
+
+OpenVoiceOS wake word plugin for [precise-lite](https://github.com/OpenVoiceOS/precise-lite)
+
+train models with [precise-lite-trainer](https://github.com/OpenVoiceOS/precise-lite-trainer) or download pre-trained [precise-lite-models](https://github.com/OpenVoiceOS/precise-lite-models)
 
 ## Install
 
