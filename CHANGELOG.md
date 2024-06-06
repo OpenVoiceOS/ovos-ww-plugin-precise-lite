@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.2...HEAD)
+
+**Fixed bugs:**
+
+- Package from PyPi doesn't not work [\#3](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/issues/3)
+
+## [V0.1.2](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.2) (2023-04-14)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.2a4...V0.1.2)
+
 ## [V0.1.2a4](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.2a4) (2023-04-14)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.2a3...V0.1.2a4)
