@@ -33,3 +33,9 @@ Add the following to your hotwords section in mycroft.conf
 ```
 
 Get community models [here](https://github.com/OpenVoiceOS/precise-lite-models)
+
+## Other Programming Languages
+
+Community members have ported precise to other programming languages
+- Go - [precise-go](https://github.com/tystuyfzand/precise-go) by [tystuyfzand](https://github.com/tystuyfzand)
+- Rust - [precise-rs](https://github.com/sheosi/precise-rs) by [sheosi](https://github.com/sheosi)

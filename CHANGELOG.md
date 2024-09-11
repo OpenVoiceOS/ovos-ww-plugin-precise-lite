@@ -1,44 +1,20 @@
 # Changelog
 
-## [V0.1.2a4](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.2a4) (2023-04-14)
+## [0.1.3a2](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/0.1.3a2) (2024-09-11)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.2a3...V0.1.2a4)
-
-## [V0.1.2a3](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.2a3) (2023-04-06)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.2a2...V0.1.2a3)
-
-**Implemented enhancements:**
-
-- feat/bump\_ovos\_precise\_runner [\#4](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/pull/4) ([JarbasAl](https://github.com/JarbasAl))
-
-**Closed issues:**
-
-- Requirements issue [\#2](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/issues/2)
-
-## [V0.1.2a2](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.2a2) (2022-09-10)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.2a1...V0.1.2a2)
-
-## [V0.1.2a1](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.2a1) (2022-09-10)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.1...V0.1.2a1)
-
-## [V0.1.1](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.1) (2022-02-28)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.1a2...V0.1.1)
-
-## [V0.1.1a2](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.1a2) (2022-02-28)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.1a1...V0.1.1a2)
-
-## [V0.1.1a1](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.1a1) (2022-02-28)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/a2a2dd92f7385337b57885842f9be59a632c6d9c...V0.1.1a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.3a1...0.1.3a2)
 
 **Merged pull requests:**
 
-- Refactor/replace tflit/pyxdg [\#1](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/pull/1) ([NeonJarbas](https://github.com/NeonJarbas))
+- feat:semver [\#5](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/pull/5) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.1.3a1](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.3a1) (2024-06-06)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.2...V0.1.3a1)
+
+**Fixed bugs:**
+
+- Package from PyPi doesn't not work [\#3](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/issues/3)
 
 
 
