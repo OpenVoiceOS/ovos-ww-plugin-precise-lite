@@ -66,7 +66,7 @@ setup(
     packages=['ovos_ww_plugin_precise_lite'],
     install_requires=required("requirements/requirements.txt"),
     extras_require={
-        'tflite': ["tflite-runtime"],
+        'tflite': required("requirements/tflite.txt"),
         'full': ["tensorflow"]
     },
     zip_safe=True,
