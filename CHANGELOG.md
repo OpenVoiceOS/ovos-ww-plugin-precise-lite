@@ -1,20 +1,20 @@
 # Changelog
 
-## [0.1.3a2](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/0.1.3a2) (2024-09-11)
+## [0.1.4a1](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/0.1.4a1) (2025-01-25)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.3a1...0.1.3a2)
-
-**Merged pull requests:**
-
-- feat:semver [\#5](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/pull/5) ([JarbasAl](https://github.com/JarbasAl))
-
-## [V0.1.3a1](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.3a1) (2024-06-06)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.2...V0.1.3a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.3...0.1.4a1)
 
 **Fixed bugs:**
 
-- Package from PyPi doesn't not work [\#3](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/issues/3)
+- ImportError raised when loading with tflite [\#7](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/issues/7)
+
+**Merged pull requests:**
+
+- Pin numpy dependency for tflite compatibility [\#8](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/pull/8) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.1.3](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.3) (2024-09-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/0.1.3...V0.1.3)
 
 
 
