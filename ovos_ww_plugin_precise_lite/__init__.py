@@ -1,10 +1,11 @@
-from os.path import join, isfile, expanduser, dirname
+from os import makedirs
+from os.path import join, isfile, expanduser
+
+import requests
 from ovos_plugin_manager.templates.hotwords import HotWordEngine
 from ovos_utils.log import LOG
-import requests
-from os import makedirs
-from precise_lite_runner import PreciseLiteListener, ReadWriteStream
 from ovos_utils.xdg_utils import xdg_data_home
+from precise_lite_runner import PreciseLiteListener, ReadWriteStream
 
 
 class PreciseLiteHotwordPlugin(HotWordEngine):
@@ -12,8 +13,8 @@ class PreciseLiteHotwordPlugin(HotWordEngine):
     This is the community developed TfLite version of that engine
     """
 
-    def __init__(self, key_phrase="hey mycroft", config=None, lang="en-us"):
-        super().__init__(key_phrase, config, lang)
+    def __init__(self, key_phrase="hey mycroft", config=None):
+        super().__init__(key_phrase, config)
         self.expected_duration = self.config.get("expected_duration") or 3
         self.has_found = False
         self.stream = ReadWriteStream()
@@ -62,7 +63,7 @@ class PreciseLiteHotwordPlugin(HotWordEngine):
     def update(self, chunk):
         self.stream.write(chunk)
 
-    def found_wake_word(self, frame_data):
+    def found_wake_word(self):
         if self.has_found:
             self.has_found = False
             return True
