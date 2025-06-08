@@ -1,8 +1,16 @@
 # Changelog
 
+## [0.1.5a1](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/0.1.5a1) (2025-06-08)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/0.1.4a1...0.1.5a1)
+
+**Merged pull requests:**
+
+- fix: compatibility with ovos-plugin-manager 1.X.X [\#10](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/pull/10) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.4a1](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/0.1.4a1) (2025-01-25)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/V0.1.3...0.1.4a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/0.1.3...0.1.4a1)
 
 **Fixed bugs:**
 
@@ -11,10 +19,6 @@
 **Merged pull requests:**
 
 - Pin numpy dependency for tflite compatibility [\#8](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/pull/8) ([NeonDaniel](https://github.com/NeonDaniel))
-
-## [V0.1.3](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/tree/V0.1.3) (2024-09-11)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite/compare/0.1.3...V0.1.3)
 
 
 
