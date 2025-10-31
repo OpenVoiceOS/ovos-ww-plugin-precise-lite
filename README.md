@@ -4,6 +4,12 @@ OpenVoiceOS wake word plugin for [precise-lite](https://github.com/OpenVoiceOS/p
 
 train models with [precise-lite-trainer](https://github.com/OpenVoiceOS/precise-lite-trainer) or download pre-trained [precise-lite-models](https://github.com/OpenVoiceOS/precise-lite-models)
 
+---
+
+> **WARNING**: precise is no longer maintained, it is suggested you move to [ovos-ww-plugin-precise-onnx](https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-onnx) for inference on existing models.
+
+---
+
 ## Install
 
 This package supports both tflite-runner and the full tensorflow.
